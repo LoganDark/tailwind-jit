@@ -1,13 +1,10 @@
 module.exports = {
-  mode: 'jit',
-  purge: [
-      'src/*.html',
-      'build/**/*.html',
-  ],
-  presets: [],
-  darkMode: false, // or 'media' or 'class'
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography')
-  ]
+	mode: 'jit',
+	purge: ['build/**/*.html'],
+	darkMode: false, // or 'media' or 'class'
+	theme: {},
+	plugins: [
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/typography')
+	]
 }
